@@ -1,0 +1,13 @@
+--- OpenCOLLADA-1.6.68/CMakeLists.txt.orig	2023-04-01 21:36:16.175865211 +0200
++++ OpenCOLLADA-1.6.68/CMakeLists.txt	2023-04-01 22:00:36.754619243 +0200
+@@ -191,8 +191,8 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}
+ # Install vars
+ 
+ set(OPENCOLLADA_INST_INCLUDE ${CMAKE_INSTALL_PREFIX}/include/opencollada)
+-set(OPENCOLLADA_INST_LIBRARY ${CMAKE_INSTALL_PREFIX}/lib/opencollada)
+-set(OPENCOLLADA_INST_CMAKECONFIG ${OPENCOLLADA_INST_LIBRARY}/cmake)
++set(OPENCOLLADA_INST_LIBRARY ${CMAKE_INSTALL_PREFIX}/lib/opencollada CACHE PATH "")
++set(OPENCOLLADA_INST_CMAKECONFIG ${OPENCOLLADA_INST_LIBRARY}/cmake CACHE PATH "")
+ 
+ 
+ #-----------------------------------------------------------------------------

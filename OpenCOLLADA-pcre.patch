@@ -1,0 +1,12 @@
+--- OpenCOLLADA-1.6.68/COLLADABaseUtils/include/COLLADABUPcreCompiledPattern.h.orig	2018-11-26 23:43:10.000000000 +0100
++++ OpenCOLLADA-1.6.68/COLLADABaseUtils/include/COLLADABUPcreCompiledPattern.h	2020-12-31 13:31:49.542115850 +0100
+@@ -13,8 +13,7 @@
+ 
+ #include "COLLADABUPrerequisites.h"
+ 
+-struct real_pcre;
+-typedef struct real_pcre pcre;
++#include <pcre.h>
+ 
+ 
+ namespace COLLADABU

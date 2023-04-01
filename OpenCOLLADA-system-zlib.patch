@@ -1,0 +1,28 @@
+--- OpenCOLLADA-1.6.68/CMakeLists.txt.orig	2018-11-26 23:43:10.000000000 +0100
++++ OpenCOLLADA-1.6.68/CMakeLists.txt	2023-04-01 21:00:52.307371195 +0200
+@@ -274,7 +274,6 @@ add_subdirectory(common/libftoa)
+ add_subdirectory(${EXTERNAL_LIBRARIES}/UTF)
+ add_subdirectory(common/libBuffer)
+ add_subdirectory(${EXTERNAL_LIBRARIES}/MathMLSolver)
+-add_subdirectory(${EXTERNAL_LIBRARIES}/zlib)
+ 
+ # building OpenCOLLADA libs
+ add_subdirectory(COLLADABaseUtils)
+--- OpenCOLLADA-1.6.68/DAEValidator/CMakeLists.txt.orig	2018-11-26 23:43:10.000000000 +0100
++++ OpenCOLLADA-1.6.68/DAEValidator/CMakeLists.txt	2023-04-01 21:20:25.487682198 +0200
+@@ -80,14 +80,7 @@ if (NOT LIBXML2_FOUND)
+ else ()
+     list(APPEND Libraries ${LIBXML2_LIBRARIES})
+ endif ()
+-if (USE_STATIC)
+-        list(APPEND Libraries zlib_static)
+-    else ()
+-        list(APPEND Libraries zlib_shared)
+-    endif ()
+-if (WIN32)
+-	list(APPEND Libraries ws2_32.lib)
+-endif ()
++list(APPEND Libraries z)
+ target_link_libraries(DAEValidatorExecutable ${Libraries})
+ set_target_properties(DAEValidatorExecutable PROPERTIES OUTPUT_NAME DAEValidator)
+ 
