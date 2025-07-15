@@ -7,7 +7,7 @@ Summary:	3DS Max / Maya scenes exporter to COLLADA format
 Summary(pl.UTF-8):	Biblioteki do eksportu scen 3DS Max / Maya do formatu COLLADA
 Name:		OpenCOLLADA
 Version:	1.6.68
-Release:	1
+Release:	2
 License:	MIT
 Group:		Libraries
 #Source0Download: https://github.com/KhronosGroup/OpenCOLLADA/releases
