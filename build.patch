@@ -1,0 +1,20 @@
+--- OpenCOLLADA-1.6.68/DAEValidator/library/src/DaeValidator.cpp~	2018-11-26 23:43:10.000000000 +0100
++++ OpenCOLLADA-1.6.68/DAEValidator/library/src/DaeValidator.cpp	2025-08-02 00:13:28.938888771 +0200
+@@ -4,6 +4,7 @@
+ #include "Strings.h"
+ #include "StringUtil.h"
+ #include <cmath>
++#include <cstdint>
+ #include "no_warning_iomanip"
+ #include "no_warning_iostream"
+ #include <set>
+--- OpenCOLLADA-1.6.68/DAEValidator/library/src/XmlDoc.cpp~	2018-11-26 23:43:10.000000000 +0100
++++ OpenCOLLADA-1.6.68/DAEValidator/library/src/XmlDoc.cpp	2025-08-02 00:14:32.412609652 +0200
+@@ -3,6 +3,7 @@
+ #if IS_GNUC_AND_GNUC_VERSION_LT(5,1,1)
+ #include <cstring>
+ #endif
++#include <cstdint>
+ 
+ #include "XmlDoc.h"
+ #include "XmlNode.h"
